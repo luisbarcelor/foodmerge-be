@@ -1,0 +1,7 @@
+# Ignored folders 
+.idea/
+obj/
+bin/
+
+# Environment
+.env
