@@ -5,3 +5,6 @@ bin/
 
 # Environment
 .env
+
+# User-specific files
+*.sln.DotSettings
