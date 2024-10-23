@@ -2,9 +2,15 @@ namespace FoodMerge.Domain.Entities;
 
 public class Recipe
 {
-    private Guid Id { get; set; }
+    public Guid Id { get; set; }
     
-    private string Name { get; set; }
+    public string Title { get; set; }
     
-    private string Description { get; set; }
+    public string Description { get; set; }
+    
+    public long Favorited { get; set; }
+    
+    public string Difficulty { get; set; }
+    
+    public string Source { get; set; }
 }

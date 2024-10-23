@@ -1,6 +1,6 @@
 namespace FoodMerge.Domain.Entities;
 
-public class Category
+public class RecipeCategory
 {
     public Guid Id { get; set; }
 
