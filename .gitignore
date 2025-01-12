@@ -9,3 +9,5 @@ bin/
 # User-specific files
 *.sln.DotSettings
 */Properties/launchSettings.json
+
+**/*.user
