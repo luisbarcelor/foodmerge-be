@@ -1,0 +1,13 @@
+# Ignored folders 
+.idea/
+obj/
+bin/
+
+# Environment
+.env
+
+# User-specific files
+*.sln.DotSettings
+*/Properties/launchSettings.json
+
+**/*.user
