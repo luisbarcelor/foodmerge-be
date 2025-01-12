@@ -19,17 +19,9 @@ using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     bool isConnected = await dbContext.IsDatabaseConnectedAsync();
-    
-    if (isConnected)
-    {
-        Console.WriteLine("Connected to the database successfully!");
-    }
-    else
-    {
-        Console.WriteLine("Failed to connect to the database.");
-    }
-}
 
+    Console.WriteLine(isConnected ? "Connected to the database successfully!" : "Failed to connect to the database.");
+}
 
 if (app.Environment.IsDevelopment())
 {

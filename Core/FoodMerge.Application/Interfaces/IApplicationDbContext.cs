@@ -14,4 +14,6 @@ public interface IApplicationDbContext
     public DbSet<RecipeCategory> RecipeCategories { get; set; }
     
     public DbSet<IngredientCategory> IngredientCategories { get; set; }
+    
+    public Task<bool> IsDatabaseConnectedAsync();
 }
