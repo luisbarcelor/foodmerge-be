@@ -29,4 +29,9 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
             return false;
         }
     }
+    
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        // You can also use Fluent API for further configuration if needed
+    }
 }

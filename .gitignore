@@ -1,5 +1,6 @@
 # Ignored folders 
 .idea/
+.run/
 obj/
 bin/
 
