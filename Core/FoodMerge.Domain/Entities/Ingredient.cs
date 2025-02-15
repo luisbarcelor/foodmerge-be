@@ -1,10 +1,13 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace FoodMerge.Domain.Entities;
 
 public class Ingredient
 {
-    public Guid Id { get; set; }
+    [Key]
+    public Guid Id { get; private set; } = Guid.NewGuid();
     
-    public string Name { get; set; }
+    public string? Name { get; set; }
     
-    public string Description { get; set; }
+    public string? Description { get; set; }
 }

@@ -1,16 +1,22 @@
+using System.ComponentModel.DataAnnotations;
+using FoodMerge.Domain.Enums;
+
 namespace FoodMerge.Domain.Entities;
 
 public class Recipe
 {
-    public Guid Id { get; set; }
+    [Key]
+    public Guid Id { get; private set; } = Guid.NewGuid();
     
-    public string Title { get; set; }
+    [MaxLength(100)]
+    public string? Title { get; set; }
     
-    public string Description { get; set; }
-    
+    [MaxLength(500)]
+    public string? Description { get; set; }
+
     public long Favorited { get; set; }
-    
-    public string Difficulty { get; set; }
-    
-    public string Source { get; set; }
+
+    public Difficulty? Difficulty { get; set; }
+
+    public Uri? Source { get; set; }
 }
